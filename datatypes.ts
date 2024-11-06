@@ -20,12 +20,13 @@ getStatus();
 
 
 // numeric datatype
-function getSalary() {
+function getSalary() { //{} curly brasis is show blocked scope.
     let amount: number;
     amount = 300000;
     console.log(amount);
 }
 getSalary();
+
 
 
 

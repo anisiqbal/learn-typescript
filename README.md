@@ -109,6 +109,39 @@ then
 => 2nd command node dataypes answer is show in terminal.
    mean 2nd you pass command in terminal "node datatypes" that answer in Terminal.
 
+=> Let & Const is blocked scope variable 
+
+. let value is changable 
+
+. const value is not changable
+
+
+// boolean datatype
+function getStatus() {
+    let status: boolean;
+    status = true;
+    console.log(status);
+}
+getStatus();
+
+
+// numeric datatype
+function getSalary() {
+    let amount: number;
+    amount = 300000;
+    console.log(amount);
+}
+getSalary();
+
+
+function getBuy(){ //{} curly brasis is show blocked scope
+    let rupees: number;
+    rupees = 400000;
+    console.log(rupees);
+}
+getBuy();
+
+
 
 
 
