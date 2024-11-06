@@ -36,4 +36,79 @@ what is Framework?
 . `npm init` to create a package.json
 . intall Typescript "npm i typescript"
 . initialize Typescript
-. "tsc --init" if error type this command `npm install -g typescript` after same run command `tsc --init`
+. "tsc --init" if error type this command `npm install -g typescript` after same run command `tsc --init`.
+
+- first you create a file with the name of "datatypes.ts".
+- 2nd you create a file with the name of "test.js".
+
+-> // test.js File of JAVASCRIPT FILE //
+
+let fname = 'test'
+fname = 10;
+// This is a javascript file: file name is "test.js"
+// mean you pass let variable fname = string , and fname = int then your code is run.
+
+-> // datatypes.ts File of Typescript File //
+
+let lname = 'john';
+// lname = 10
+// This is a Typescript file: file name is "datatypes.ts"
+// mean you pass let variable lname = string mean let lname = 'john';, and lname = int mean '10' then your code is not run , show error.
+
+after that ....
+
+You pass command 'tsc' in Terminal.
+then create file automatically with the name of datatypes.js.
+typescript comes with its own compiler got TSC so rum command of "tsc".
+like..
+
+"use strict";
+let lname = 'john';
+lname = 10;
+
+// This is a datatypes file: file name is "datatypes.js"
+// mean you pass let variable lname = string mean let lname = 'john';, and lname = int mean '10' then your code is run.
+
+
+DATA TYPES:::
+
+=> Agenda:
+- Data Types
+- Type inference
+- Union and Intersection Types
+- Generics
+- Literal Types
+
+=> Data Types:
+. String
+. number
+. boolean 
+. array 
+. enum 
+. tuple
+. any
+. void
+. never
+
+//////// Data Types ////////
+
+let lname : string;
+
+lname = "Muhammad Anis";
+
+let newname = lname.toUpperCase();
+
+console.log(newname);
+
+
+=> 1st command "tsc" mean your typescript code compile javascript code.
+   mean first you pass command in terminal "tsc" that answer in file of datatypes.js
+
+then
+
+=> 2nd command node dataypes answer is show in terminal.
+   mean 2nd you pass command in terminal "node datatypes" that answer in Terminal.
+
+
+
+
