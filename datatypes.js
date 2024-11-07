@@ -22,15 +22,3 @@ function getSalary() {
     console.log(amount);
 }
 getSalary();
-// function getBuy(){ //{} curly brasis is show blocked scope
-//     let rupees: number;
-//     rupees = 400000;
-//     console.log(rupees);
-// }
-// getBuy();
-function getAmount() {
-    let rupees;
-    rupees = 500000;
-    console.log(rupees);
-}
-getAmount();
