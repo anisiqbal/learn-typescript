@@ -19,3 +19,7 @@ function add1(num1, num2, num3) {
 }
 console.log(add1(2, 3));
 console.log(add1(2, 3, 5));
+///// Required parameter ////////
+const sub1 = (num1, num2, num3 = 10) => num1 - num2 - num3;
+console.log(sub1(2, 3));
+console.log(sub1(2, 3, 5));
