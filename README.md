@@ -195,6 +195,128 @@ console.log(sub1(2,3,5));
 
 
 => We are talking about classes:::
+=> Why you use classes ?
+. in angular you use classes for writting services which can have like getting data from your 
+back end and displaying it on your front end we will using it for components which will be kind of your view so its need some backends right it mean it need some class to actually give data back for your HTML  
+
+Agenda::
+. introduction to classes.
+. creating classes.
+. class properties and constructor.
+. class method.
+. creating instance of class. in code like classes " constructor, getNameWithAddress, new Employee"
+. member visibility. like "id: , name: , address:"
+. static member
+
+Create a file with the name of classes.ts after you go to terminal and run command 'Transpile' tsc then automatically create file with the name of classes.js.
+Run command 
+
+
+// creating a class /////
+
+class Employee {
+
+    //// Add properties //////
+
+    id!: number; 
+    name! : string;
+    address!: string;
+    };
+
+let john = new Employee();
+
+john.id = 10;
+john.name = 'john';
+john.address = ' Highway 71';
+console.log(john);
+
+
+/////////////// Same but Add constructor Function and remove "!" mark in properties see before code.
+
+class Employee {
+
+    //// How to Add properties //////
+
+    id: number; 
+    name : string;
+    address: string;
+
+    ///// Assign all properties using 'constructor'.
+    //// In typescript you can have either 'Default Constructor' OR 'Parametrized Constructor'.
+
+    //// How to Add constructor function //////
+
+    constructor( id : number, name : string, address : string ) {
+        this.address = address;
+        this.name = name;
+        this.id = id;
+    }
+
+};
+
+let john = new Employee(1, "john", "Highway 71");
+
+// john.id = 10;
+// john.name = 'john';
+// john.address = ' Highway 71';
+console.log(john);
+
+
+////////// Add method to your class //////////
+
+    getNameWithAddress() : string{
+        //// Vriables can replace with curly brasis{}.
+        return `${this.name} stays at ${this.address}`;
+    }
+
+
+let john = new Employee(1, "john", "Highway 71");
+let address = john.getNameWithAddress();
+
+console.log(address);
+
+
+class Employee {
+
+    //// How to Add properties //////
+
+    id: number; 
+    name : string;
+    address: string;
+
+    ///// Assign all properties using 'constructor'.
+    //// In typescript you can have either 'Default Constructor' OR 'Parametrized Constructor'.
+
+    //// How to Add constructor function //////
+
+    constructor( id : number, name : string, address : string ) {
+        this.address = address;
+        this.name = name;
+        this.id = id;
+    }
+
+    //// Add method to your class /////
+
+    getNameWithAddress() : string{
+        //// Vriables can replace with curly brasis{}.
+        return `${this.name} stays at ${this.address}`;
+    }
+
+};
+
+
+
+let john = new Employee(1, "john", "Highway 71");
+let address = john.getNameWithAddress();
+
+// john.id = 10;
+// john.name = 'john';
+// john.address = ' Highway 71';
+console.log(address);
+
+
+////// Talk about "Interfaces". /////
+
 
 
 
